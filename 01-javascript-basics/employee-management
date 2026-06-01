@@ -1,0 +1,54 @@
+
+const employees = [
+  { id: 1, name: "Alok", salary: 50000, active: true },
+  { id: 2, name: "Rahul", salary: 60000, active: false },
+  { id: 3, name: "Amit", salary: 70000, active: true },
+  { id: 4, name: "Neha", salary: 80000, active: true }
+];
+
+
+const active  = employees.filter(emp => emp.active === true);
+
+const sal = employees.find(emp => emp.salary > 6000);
+
+const obj = employees.find(emp => emp.id === 3);
+
+const inc = employees.map(emp => {
+
+	return{
+
+		...emp,
+		salary: emp.salary * 12.5
+
+	};
+
+});
+
+
+
+
+const dec = employees.map(emp => {
+
+return {
+
+...emp,
+
+salary: emp.salary / 12.5
+
+};
+
+
+});
+
+
+const red = employees.reduce(name , salary) = {
+	return name + salary
+};
+
+
+
+
+
+
+
+console.log(red)
